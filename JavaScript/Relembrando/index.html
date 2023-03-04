@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function soma(){
+            var num1 = document.getElementById("numbera").value;
+            var num2 = document.getElementById("numberb").value;
+            var res = document.getElementById("res");
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            res.innerHTML = num1 + num2;
+        }
+    </script>
 </head>
 
 <body>
@@ -16,7 +26,10 @@
     </header>
 
     <main>
-        <h1>Test</h1>
+        <input id="numbera">
+        <input id="numberb">
+        <button onclick="soma()">Soma</button>
+        <div id="res"></div>
     </main>
 
     <footer>
